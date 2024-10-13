@@ -19,7 +19,7 @@ jobs:
         uses: docker/login-action@master
         with:
           registry: ghcr.io
-          username: ${{ rimehrab }}
+          username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Extract metadata (tags, labels) for GitHub Packages
